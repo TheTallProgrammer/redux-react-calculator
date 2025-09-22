@@ -4,7 +4,11 @@ import styles from '../styles/Calculator.module.css'
 const Calculator = () => {
   return (
     <div className={styles.calculatorWrapper}>
-        <h1>I'm a calculator</h1>
+        <div className={styles.contentWrapper}>
+            <div className={styles.screenWrapper}>
+                
+            </div>
+        </div>
     </div>
   )
 }
