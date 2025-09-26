@@ -8,16 +8,19 @@ const Calculator = () => {
 
   return (
     <div className={styles.calculatorWrapper}>
-        <div className={styles.contentWrapper}>
-            <div className={styles.screenWrapper}/>
-            <div className={styles.operatorWrapper}>
-              {operators.map((operator: string) => (
-                <OperatorButton key={keyId + 1} operatorSymbol={operator}/>
-              ))}
-            </div>
-            <div className={styles.numbersWrapper}/>
-            <div className={styles.specialOpWrapper}/>
+      <div className={styles.contentWrapper}>
+        <div className={styles.screenWrapper} />
+        <div className={styles.operatorWrapper}>
+          {operators.map((operator: string) => (
+            <OperatorButton key={keyId + 1} operatorSymbol={operator} />
+          ))}
         </div>
+        <div className={styles.middleContentWrapper}>
+          <div className={styles.numbersWrapper} />
+          <div className={styles.specialOpWrapper} />
+        </div>
+
+      </div>
     </div>
   )
 }
