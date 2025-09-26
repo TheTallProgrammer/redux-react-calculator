@@ -8,9 +8,7 @@ interface operatorProps {
 const OperatorButton = (props: operatorProps) => {
     return (
         <div className={styles.buttonWrapper}>
-            <div className={styles.contentWrapper}>
-                <button>{props.operatorSymbol}</button>
-            </div>
+            <button className={styles.buttonStyles}> {props.operatorSymbol}</button>
         </div>
     )
 }
