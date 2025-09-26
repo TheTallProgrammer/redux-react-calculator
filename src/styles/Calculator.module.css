@@ -9,7 +9,7 @@
 }
 
 .contentWrapper {
-    /* background: rgb(255, 207, 207);  */
+    background: rgb(255, 207, 207); 
     width: 80%;
     height: 80%;
     justify-content: center;
@@ -32,4 +32,16 @@
     flex: column;
     gap: 20px;
 
+}
+
+.numbersWrapper{
+    width: 75%;
+    height: 50%;
+    background-color: rgb(142, 100, 144)
+}
+
+.specialOpWrapper{
+    width: 25%;
+    height: 50%;
+    background-color:rgb(143, 188, 220);
 }

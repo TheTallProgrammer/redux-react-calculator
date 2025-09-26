@@ -15,6 +15,8 @@ const Calculator = () => {
                 <OperatorButton key={keyId + 1} operatorSymbol={operator}/>
               ))}
             </div>
+            <div className={styles.numbersWrapper}/>
+            <div className={styles.specialOpWrapper}/>
         </div>
     </div>
   )
