@@ -28,7 +28,7 @@ const Calculator = () => {
           </div>
           <div className={styles.specialOpWrapper} > 
             <OperatorButton operatorSymbol='Clear' buttonColor='#000000' width={100} height={195}/>
-            <OperatorButton operatorSymbol='=' buttonColor='#FFA500' width={100} height={195}/> 
+            <OperatorButton operatorSymbol='=' buttonColor='#ff7300ff' width={100} height={195}/> 
           </div>
         </div>
       </div>
