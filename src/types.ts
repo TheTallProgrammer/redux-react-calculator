@@ -5,3 +5,7 @@ export interface operatorProps {
     height: number
     marginTop?: string
 }
+
+export interface numberProps {
+    buttonNumber: number
+}

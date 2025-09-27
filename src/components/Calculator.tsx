@@ -4,6 +4,7 @@ import OperatorButton from './OperatorButton';
 
 const Calculator = () => {
   const operators: string[] = ['x', '/', '+', '-'];
+  const numbers: string[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
   let keyId: number = 0;
 
   return (

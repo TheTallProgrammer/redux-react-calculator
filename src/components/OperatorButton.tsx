@@ -1,7 +1,6 @@
 import React from 'react'
 import type { operatorProps } from '../types'
 
-
 const OperatorButton = (props: operatorProps) => {
     const buttonWrapper: React.CSSProperties = {
         marginTop: props.marginTop,
@@ -9,17 +8,15 @@ const OperatorButton = (props: operatorProps) => {
         height: props.height,
         /* background-color: black; */
         fontSize: '2.5rem',
-        color: 'white',
         borderRadius: '10px',
-        
     }
     const buttonStyles: React.CSSProperties = {
-            width:'100%',
-            height:`100%`,
-            fontSize: '2rem',
-            backgroundColor: props.buttonColor,
-            color: 'white',
-            borderRadius: '10px',
+        width:'100%',
+        height:`100%`,
+        fontSize: '2rem',
+        backgroundColor: props.buttonColor,
+        color: '#ffffffff',
+        borderRadius: '10px',
     }
     return (
         <div style={buttonWrapper}>
