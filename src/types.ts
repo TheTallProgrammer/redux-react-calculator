@@ -7,5 +7,5 @@ export interface operatorProps {
 }
 
 export interface numberProps {
-    buttonNumber: number
+    buttonNumber: string
 }
