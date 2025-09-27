@@ -1,9 +1,7 @@
 import React from 'react'
 import styles from '../styles/OperatorButton.module.css'
+import type { operatorProps } from '../types'
 
-interface operatorProps {
-    operatorSymbol: string
-}
 
 const OperatorButton = (props: operatorProps) => {
     return (
