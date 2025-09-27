@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '../styles/Calculator.module.css'
 import OperatorButton from './OperatorButton';
-import SpecialOpButton from './SpecialOpButton';
 
 const Calculator = () => {
   const operators: string[] = ['x', '/', '+', '-'];
@@ -13,14 +12,16 @@ const Calculator = () => {
         <div className={styles.screenWrapper} />
         <div className={styles.operatorWrapper}>
           {operators.map((operator: string) => (
-            <OperatorButton key={keyId + 1} operatorSymbol={operator} />
+            <OperatorButton key={keyId + 1} operatorSymbol={operator} buttonColor='#000000' width={100} height={70} marginTop='20px'/>
           ))}
         </div>
         <div className={styles.middleContentWrapper}>
           <div className={styles.numbersWrapper} />
-          <div className={styles.specialOpWrapper} > <SpecialOpButton operatorSymbol='Clear'/> </div>
+          <div className={styles.specialOpWrapper} > 
+            <OperatorButton operatorSymbol='Clear' buttonColor='#000000' width={100} height={160}/>
+            <OperatorButton operatorSymbol='=' buttonColor='#FFA500' width={100} height={160}/> 
+          </div>
         </div>
-
       </div>
     </div>
   )

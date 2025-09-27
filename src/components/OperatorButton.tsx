@@ -1,12 +1,29 @@
 import React from 'react'
-import styles from '../styles/OperatorButton.module.css'
 import type { operatorProps } from '../types'
 
 
 const OperatorButton = (props: operatorProps) => {
+    const buttonWrapper: React.CSSProperties = {
+        marginTop: props.marginTop,
+        width: props.width,
+        height: props.height,
+        /* background-color: black; */
+        fontSize: '2.5rem',
+        color: 'white',
+        borderRadius: '10px',
+        
+    }
+    const buttonStyles: React.CSSProperties = {
+            width:'100%',
+            height:`100%`,
+            fontSize: '2rem',
+            backgroundColor: props.buttonColor,
+            color: 'white',
+            borderRadius: '10px',
+    }
     return (
-        <div className={styles.buttonWrapper}>
-            <button className={styles.buttonStyles}> {props.operatorSymbol}</button>
+        <div style={buttonWrapper}>
+            <button style={buttonStyles}> {props.operatorSymbol}</button>
         </div>
     )
 }
