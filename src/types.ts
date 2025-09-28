@@ -8,4 +8,6 @@ export interface operatorProps {
 
 export interface numberProps {
     buttonNumber: string
+    width?: number
+    height?: number
 }
