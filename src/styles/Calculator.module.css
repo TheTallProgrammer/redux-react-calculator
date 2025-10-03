@@ -9,7 +9,7 @@
 }
 
 .contentWrapper {
-    background: rgb(255, 207, 207); 
+    /* background: rgb(255, 207, 207);  */
     width: 80%;
     height: 90%;
     justify-content: center;
@@ -27,7 +27,7 @@
 .operatorWrapper{
     width: 100%;
     height: 100px;
-    background-color: rgb(98, 141, 178);
+    /* background-color: rgb(98, 141, 178); */
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@
 .numbersWrapper {
     width: 75%;
     height: 100%;
-    background-color: rgb(142, 100, 144);
+    /* background-color: rgb(142, 100, 144); */
     display: grid;
     grid-template-columns: 1.5fr 1.5fr 1.25fr;
     grid-template-rows: .4fr .4fr .4fr;
@@ -61,7 +61,7 @@
 .specialOpWrapper{
     width: 25%;
     height: 118%;
-    background-color:rgb(255, 224, 51);
+    /* background-color:rgb(255, 224, 51); */
     display: flex;
     flex-direction: column;
     align-items: flex-end;
@@ -71,13 +71,14 @@
 .lowerWrapper {
     width: 75%;
     height: 9%;
-    background-color: rgb(255, 0, 0);
+    /* background-color: rgb(255, 0, 0); */
     display: flex;
 }
 
 .lowerButtonWrapper {
     margin-top: -5px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    gap: 25px;
 }
 
