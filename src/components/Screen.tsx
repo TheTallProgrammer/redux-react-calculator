@@ -1,6 +1,8 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 
 const Screen = () => {
+  const calcVal = useSelector((state: any) => state.calcValue.currentValue);
   return (
     <div style={{
         height: '100%',
@@ -11,7 +13,7 @@ const Screen = () => {
         alignItems: 'center',
       }}>
       <div>
-        <h1>0</h1>
+        <h1>{calcVal}</h1>
       </div>
     </div>
   )

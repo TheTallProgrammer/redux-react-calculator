@@ -7,7 +7,6 @@ import Screen from './Screen';
 const Calculator = () => {
   const operators: string[] = ['x', '/', '+', '-'];
   const numbers: string[] = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-  let keyId: number = 0;
 
   return (
     <div className={styles.calculatorWrapper}>
@@ -16,15 +15,15 @@ const Calculator = () => {
           <Screen />
         </div>
         <div className={styles.operatorWrapper}>
-          {operators.map((operator: string) => (
-            <OperatorButton key={keyId + 1} operatorSymbol={operator} buttonColor='#000000' width={100} height={70} marginTop='20px' />
+          {operators.map((operator: string, index: number) => (
+            <OperatorButton key={index} operatorSymbol={operator} buttonColor='#000000' width={100} height={70} marginTop='20px' />
           ))}
         </div>
         <div className={styles.middleContentWrapper}>
           <div className={styles.moreMiddleWrapper}>
             <div className={styles.numbersWrapper}>
-              {numbers.map((num: string) => (
-                <NumberButton buttonNumber={num} />
+              {numbers.map((num: string, index: number) => (
+                <NumberButton key={index} buttonNumber={num} />
               ))}
             </div>
             <div className={styles.specialOpWrapper} >
