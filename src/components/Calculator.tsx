@@ -35,6 +35,7 @@ const Calculator = () => {
           <div className={styles.lowerWrapper}>
           <div className={styles.lowerButtonWrapper}>
             <NumberButton buttonNumber='0' width={230} />
+            <OperatorButton operatorSymbol='.' buttonColor='#000000' width={100} height={195}/>
           </div>
         </div>
         </div>
