@@ -9,7 +9,6 @@ const OperatorButton = (props: operatorProps) => {
         marginTop: props.marginTop,
         width: props.width,
         height: props.height,
-        /* background-color: black; */
         fontSize: '2.5rem',
         borderRadius: '10px',
     }
