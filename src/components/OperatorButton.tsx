@@ -1,7 +1,10 @@
 import React from 'react'
 import type { operatorProps } from '../types'
+import { useDispatch } from 'react-redux'
+import { setCurrentValue } from '../slices/valueSlice'
 
 const OperatorButton = (props: operatorProps) => {
+    
     const buttonWrapper: React.CSSProperties = {
         marginTop: props.marginTop,
         width: props.width,
@@ -18,9 +21,21 @@ const OperatorButton = (props: operatorProps) => {
         color: '#ffffffff',
         borderRadius: '10px',
     }
+
+    const dispatch = useDispatch();
+
+    const handleClick = () => {
+        switch(props.operatorSymbol){
+            case 'Clear':
+                dispatch(setCurrentValue('0'));
+            default:
+                break;
+        }
+    }
+
     return (
         <div style={buttonWrapper}>
-            <button style={buttonStyles}> {props.operatorSymbol}</button>
+            <button onClick={() => handleClick()}style={buttonStyles}> {props.operatorSymbol}</button>
         </div>
     )
 }

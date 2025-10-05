@@ -16,7 +16,7 @@ const NumberButton = (props: numberProps) => {
   }
   return (
     <div style={numberButtonStyles}>
-      <button  onClick={() => handleOnClick()} className={styles.buttonStyles}>{props.buttonNumber}</button>
+      <button onClick={() => handleOnClick()} className={styles.buttonStyles}>{props.buttonNumber}</button>
     </div>
   )
 }
