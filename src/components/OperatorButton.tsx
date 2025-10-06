@@ -1,7 +1,7 @@
 import React from 'react'
 import type { operatorProps } from '../types'
 import { useDispatch } from 'react-redux'
-import { setCurrentValue } from '../slices/valueSlice'
+import { resetValue, setCurrentValue } from '../slices/valueSlice'
 
 const OperatorButton = (props: operatorProps) => {
     
@@ -26,7 +26,7 @@ const OperatorButton = (props: operatorProps) => {
     const handleClick = () => {
         switch(props.operatorSymbol){
             case 'Clear':
-                dispatch(setCurrentValue('0'));
+                dispatch(resetValue());
             default:
                 break;
         }
